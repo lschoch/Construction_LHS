@@ -17,9 +17,15 @@ public class Application {
 		
 		System.out.println("-------------------------- Testing Building class"
 				            +" -------------------------");
+<<<<<<< HEAD
 		// Test the getters/setters for Building class - confirms setters as well
 		System.out.println("Testing getters/setters for Building class "
 						   +"(setters were used for initiation):\n"
+=======
+		// Test the getters/setters for myBuilding - confirms setters as well
+		System.out.println("Testing getters/setters for myBuilding (setters "
+						   +"were used for initiation):\n"
+>>>>>>> 2c18a0b211a851fea108dd2ce62aaa7424108893
 						   +"getProjectName returns: "
 						   +myBuilding.getProjectName()+"\n"
 						   +"getCompleteAddress returns: "
@@ -31,6 +37,7 @@ public class Application {
 						   +"getSubgroup returns: "
 						   +myBuilding.getSubgroup());
 		
+<<<<<<< HEAD
 		// Test draw method for Building class
 		System.out.println();
 		System.out.println("Testing draw method for Building class:");
@@ -39,6 +46,16 @@ public class Application {
 		// Test toString method for Building class
 		System.out.println();
 		System.out.println("Testing toString method for Building class:");
+=======
+		// Test draw method for myBuilding
+		System.out.println();
+		System.out.println("Testing draw method for myBuilding:");
+		myBuilding.draw();
+		
+		// Test toString method for myBuilding
+		System.out.println();
+		System.out.println("Testing toString method for myBuilding:");
+>>>>>>> 2c18a0b211a851fea108dd2ce62aaa7424108893
 		System.out.println(myBuilding.toString());
 		
 		// Test the preferred constructor and displayData method for the Building class
@@ -64,9 +81,15 @@ public class Application {
 		System.out.println();
 		System.out.println("-------------------------- Testing Business class"
 							+" --------------------------");
+<<<<<<< HEAD
 		// Test the getters for Business class - confirms setters as well
 		System.out.println("Testing getters/setters for Business class "
 				   			+"(setters were used for initiation):\n"
+=======
+		// Test the getters for myBusiness - confirms setters as well
+		System.out.println("Testing getters/setters for myBusiness (setters "
+				   			+"were used for initiation):\n"
+>>>>>>> 2c18a0b211a851fea108dd2ce62aaa7424108893
 				   			+"getProjectName returns: "
 							+myBusiness.getProjectName()+"\n"
 							+"getCompleteAddress returns: "
@@ -107,11 +130,18 @@ public class Application {
 		System.out.println();
 		System.out.println("-------------------------- Testing Mall class"
 				            +" -------------------------");
+<<<<<<< HEAD
 		// Test the getters for Mall class - confirms setters as well
 		System.out.println("Testing getters/setters for Mall class "
 				   		    +"(setters were used for initiation):\n"
 				   		    +"getProjectName returns: "
 				   		    +myMall.getProjectName()+"\n"
+=======
+		// Test the getters for myMall - confirms setters as well
+		System.out.println("Testing getters/setters for myBusiness (setters "
+				   		    +"were used for initiation):\n"
+				   		    +"getProjectName returns: "
+>>>>>>> 2c18a0b211a851fea108dd2ce62aaa7424108893
 						    +"getCompleteAddress returns: "
 						    +myMall.getCompleteAddress()+"\n"
 						    +"getTotalSquareFeet returns: "
@@ -122,14 +152,22 @@ public class Application {
 						    +myMall.getSubgroup()+"\n"
 						    +"getNumRentableUnits returns: "
 						    +myMall.getNumRentableUnits()+"\n"
+<<<<<<< HEAD
 				    		+"getNumRentedUnits returns: "
 						    +myMall.getNumRentedUnits()+"\n"
 						    +"getMedianUnitSize returns: "
 						    +df.format(myMall.getMedianUnitSize())+"\n"
+=======
+						    +"getMedianUnitSize returns: "
+						    +myMall.getNumRentedUnits()+"\n"
+						    +"getMedianUnitSize returns: "
+						    +myMall.getMedianUnitSize()+"\n"
+>>>>>>> 2c18a0b211a851fea108dd2ce62aaa7424108893
 						    +"getNumParkingSpaces returns: "
 						    +myMall.getNumParkingSpaces()
 						    );
 		
+<<<<<<< HEAD
 		// Test draw method for Mall class
 		System.out.println();
 		System.out.println("Testing draw method for Mall class:");
@@ -139,10 +177,22 @@ public class Application {
 		System.out.println();
 		System.out.println("Testing toString method for Mall class:");
 		System.out.println(myMall.toString());
+=======
+		// Test draw method for myMall
+		System.out.println();
+		System.out.println("\nTesting draw method for myMall:");
+		myMall.draw();
+		
+		// Test toString method for myMall
+		System.out.println();
+		System.out.println("Testing toString method for myMall:");
+		System.out.println(myMall.toString()+"\n");
+>>>>>>> 2c18a0b211a851fea108dd2ce62aaa7424108893
 		
 		// Test the preferred constructor and the displayData method for
 		// the Mall class
 		Mall myMall2 = new Mall("myMall2",
+<<<<<<< HEAD
 				"124 Elm St. | Louisville, KY 40219",
 				46000, "Business", "Group B", 20, 18, 2300, 200);
 		System.out.println();
@@ -255,6 +305,14 @@ public class Application {
 		System.out.println("Testing preferred constructor and displayData method "
 							+"for Apartment class:");
 		System.out.println(myApartment2.displayData());
+=======
+				"123 Elm St. | Louisville, KY 40219",
+				46000, "Business", "Group B", 20, 18, 2300, 200);
+		System.out.println();
+		System.out.println("Testing preferred constructor and displayData "
+							+"methodfor Mall Class:");
+		System.out.println(myMall2.displayData());
+>>>>>>> 2c18a0b211a851fea108dd2ce62aaa7424108893
 		
 	}//end main
 	
