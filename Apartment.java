@@ -43,7 +43,7 @@ public class Apartment extends Residential {
 	public Apartment(String projectName, String completeAddress,
 		   double totalSquareFeet, String occupancyGroup, String subgroup,
 		   int numBedrooms, int numBathrooms, boolean laundryRoom,
-		   int numUnitsAvailable, double avgUnitSize,
+		   int numAvailableUnits, double avgUnitSize,
 		   boolean parkingAvailable) {
 		super(projectName, completeAddress, totalSquareFeet, occupancyGroup,
 			  subgroup, numBedrooms, numBathrooms, laundryRoom);
@@ -75,16 +75,16 @@ public class Apartment extends Residential {
 				// value for boolean parkingAvailable variable.
 		DecimalFormat df = new DecimalFormat("#");
 		str += "Apartment\n"
-				+"Project Name: "+"\t\t"+projectName+"\n"
-				+"Address: "+"\t\t"+completeAddress+"\n"
-				+"Square Feet: "+"\t\t"+df.format(totalSquareFeet)+"\n"
-				+"Occupancy Group: "+"\t"+occupancyGroup+"\n"
-				+"Occupancy Subgroup: "+"\t"+subgroup+"\n"
-				+"Number of Bedrooms: "+"\t"+numBedrooms+"\n"
-				+"Number of Bathrooms: "+"\t"+numBathrooms+"\n"
+				+"Project Name: "+"\t\t\t"+projectName+"\n"
+				+"Address: "+"\t\t\t"+completeAddress+"\n"
+				+"Square Feet: "+"\t\t\t"+df.format(totalSquareFeet)+"\n"
+				+"Occupancy Group: "+"\t\t"+occupancyGroup+"\n"
+				+"Occupancy Subgroup: "+"\t\t"+subgroup+"\n"
+				+"Number of Bedrooms: "+"\t\t"+numBedrooms+"\n"
+				+"Number of Bathrooms: "+"\t\t"+numBathrooms+"\n"
 				+"Number of Units Available: "+"\t"+numAvailableUnits+"\n"
-				+"Average Unit Size: "+"\t"+df.format(avgUnitSize)+"\n"
-				+"Laundry Room: "+"\t\t"+strLR+"\n"
+				+"Average Unit Size: "+"\t\t"+df.format(avgUnitSize)+"\n"
+				+"Laundry Room: "+"\t\t\t"+strLR+"\n"
 				+"Parking Available: "+"\t\t"+strPA+"\n";
 		return str;
     }//end displayData

@@ -56,7 +56,7 @@ public class Building {
 				+"Address: "+"\t\t"+completeAddress+"\n"
 				+"Square Feet: "+"\t\t"+df.format(totalSquareFeet)+"\n"
 				+"Occupancy Group: "+"\t"+occupancyGroup+"\n"
-				+"Occupancy Subgroup: "+"\t"+subgroup+"\n";
+				+"Occupancy Subgroup: "+"\t"+subgroup;
 		return str;
     }//end displayData
     

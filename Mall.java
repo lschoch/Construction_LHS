@@ -68,8 +68,6 @@ public class Mall extends Business {
 	@Override
     public String displayData() {
 		String str = ""; // Variable to hold the return value.
-		//String strLR = laundryRoom?"Y":"N"; // Variable to hold string value for boolean laundryRoom variable.
-		//String strG = garage?"Y":"N"; // Variable to hold string value for boolean garage variable.
 		DecimalFormat df = new DecimalFormat("#");
 		str += "Mall\n"
 				+"Project Name: "+"\t\t\t"+projectName+"\n"
@@ -80,7 +78,7 @@ public class Mall extends Business {
 				+"Number of Rentable Units: "+"\t"+numRentableUnits+"\n"
 				+"Number of Rented Units: "+"\t"+numRentedUnits+"\n"
 				+"Median Unit Size: "+"\t\t"+df.format(medianUnitSize)+"\n"
-				+"Number of Parking Spaces: "+"\t"+numParkingSpaces+"\n\n";
+				+"Number of Parking Spaces: "+"\t"+numParkingSpaces;
 		return str;
 	}//end displayData
 	
