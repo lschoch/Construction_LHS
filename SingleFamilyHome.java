@@ -77,7 +77,7 @@ public class SingleFamilyHome extends Residential {
     	
 	/**
 	 * 
-	 * @return true if a garage is present, otherwise false
+	 * @return the current value of garage
 	 */
 	public boolean isGarage() {
 		return garage;
@@ -85,8 +85,7 @@ public class SingleFamilyHome extends Residential {
 
 	/**
 	 * 
-	 * @param garage is set to true if a garage is present, set to false if
-	 * there is no garage.
+	 * @param garage the value of garage to be set
 	 */
 	public void setGarage(boolean garage) {
 		this.garage = garage;
