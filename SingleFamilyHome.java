@@ -47,7 +47,7 @@ public class SingleFamilyHome extends Residential {
 	 */
 	@Override
 	public void draw() {
-    	System.out.println("Drawing code for <<Object Type>>");
+    	System.out.println("Drawing code for class SingleFamilyHome");
     }//end draw
     
 	/**

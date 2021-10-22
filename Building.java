@@ -38,7 +38,7 @@ public class Building {
 	 * This method will draw the object to the screen
 	 */
 	public void draw() {
-    	System.out.println("Drawing code for <<Object Type>>");
+		System.out.println("Drawing code for class Building");
     }//end draw
 	
 	/**

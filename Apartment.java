@@ -57,7 +57,7 @@ public class Apartment extends Residential {
 	 */
 	@Override
 	public void draw() {
-    	System.out.println("Drawing code for <<Object Type>>");
+    	System.out.println("Drawing code for class Apartment");
     }//end draw
     
 	/**

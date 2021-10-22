@@ -1,5 +1,4 @@
 import java.text.DecimalFormat;
-import java.text.NumberFormat;
 
 /**
  * Mall class, subclass of Business
@@ -56,7 +55,7 @@ public class Mall extends Business {
 	 */
 	@Override
 	public void draw() {
-    	System.out.println("Drawing code for <<Object Type>>");
+    	System.out.println("Drawing code for class Mall");
     }//end draw
     
 	/**

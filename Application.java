@@ -1,5 +1,14 @@
 import java.text.DecimalFormat;
 
+/**
+ * Driver class to test constructors, methods, getters/setters for all classes
+ *
+ * @author		Larry Schoch
+ * @version		1.0 
+ * Construction Project
+ * Fall/2021
+ */
+
 public class Application {
 
 	public static void main(String[] args) {
@@ -9,13 +18,13 @@ public class Application {
 		// constructor
 		Building myBuilding = new Building();
 		// Use setters to set the instance variables of myBuilding
-		myBuilding.setProjectName("Schoch Building");
+		myBuilding.setProjectName("myBuilding");
 		myBuilding.setCompleteAddress("123 Main St. | Louisville, KY 40219");
 		myBuilding.setTotalSquareFeet(50000);
 		myBuilding.setOccupancyGroup("Business");
 		myBuilding.setSubgroup("Group B");
-		
-		System.out.println("-------------------------- Testing Building class"
+		System.out.println();
+		System.out.println("-------------------------- TESTING BUILDING CLASS"
 				            +" -------------------------");
 		// Test the getters/setters for Building class - confirms setters as well
 		System.out.println("Testing getters/setters for Building class "
@@ -42,7 +51,7 @@ public class Application {
 		System.out.println(myBuilding.toString());
 		
 		// Test the preferred constructor and displayData method for the Building class
-		Building myBuilding2 = new Building("Schoch Building2",
+		Building myBuilding2 = new Building("myBuilding2",
 				"44 Harris St. | Kankakee, IL 00000",
 				45000, "Business", "Group B");
 		System.out.println();
@@ -62,7 +71,8 @@ public class Application {
 		myBusiness.setNumRentableUnits(20);
 		
 		System.out.println();
-		System.out.println("-------------------------- Testing Business class"
+		System.out.println();
+		System.out.println("-------------------------- TESTING BUSINESS CLASS"
 							+" --------------------------");
 		// Test the getters for Business class - confirms setters as well
 		System.out.println("Testing getters/setters for Business class "
@@ -105,7 +115,8 @@ public class Application {
 		myMall.setNumParkingSpaces(200);
 		
 		System.out.println();
-		System.out.println("-------------------------- Testing Mall class"
+		System.out.println();
+		System.out.println("-------------------------- TESTING MALL CLASS"
 				            +" -------------------------");
 		// Test the getters for Mall class - confirms setters as well
 		System.out.println("Testing getters/setters for Mall class "
@@ -164,7 +175,8 @@ public class Application {
 		myResidential.setLaundryRoom(true);
 		
 		System.out.println();
-		System.out.println("-------------------------- Testing Residential class"
+		System.out.println();
+		System.out.println("-------------------------- TESTING RESIDENTIAL CLASS"
 							+" --------------------------");
 		// Test the getters for Residential class - confirms setters as well
 		System.out.println("Testing getters/setters for Residential class "
@@ -213,7 +225,8 @@ public class Application {
 		myApartment.setParkingAvailable(true);
 		
 		System.out.println();
-		System.out.println("-------------------------- Testing Apartment class"
+		System.out.println();
+		System.out.println("-------------------------- TESTING APARTMENT CLASS"
 							+" --------------------------");
 		// Test the getters for Apartment class - confirms setters as well
 		System.out.println("Testing getters/setters for Apartment class"
@@ -241,6 +254,11 @@ public class Application {
 							+"isParkingAvailable returns: "
 							+myApartment.isParkingAvailable());
 		
+		// Test draw method for Apartment class
+		System.out.println();
+		System.out.println("Testing draw method for Apartment class:");
+		myApartment.draw();
+		
 		// Test toString method for Apartment class
 		System.out.println();
 		System.out.println("Testing toString method for Apartment class:");
@@ -255,6 +273,67 @@ public class Application {
 		System.out.println("Testing preferred constructor and displayData method "
 							+"for Apartment class:");
 		System.out.println(myApartment2.displayData());
+		
+		// Create an object of the SingleFamilyHome class using the empty argument
+		// constructor
+		SingleFamilyHome mySingleFamilyHome = new SingleFamilyHome();
+		// Use setters to set the instance variables of mySingleFamilyHome
+		mySingleFamilyHome.setProjectName("mySingleFamilyHome");
+		mySingleFamilyHome.setCompleteAddress("12 Fox Run Rd. | Lynchburg, TN 47325");
+		mySingleFamilyHome.setTotalSquareFeet(3200);
+		mySingleFamilyHome.setOccupancyGroup("Residential");
+		mySingleFamilyHome.setSubgroup("Group R-1");
+		mySingleFamilyHome.setNumBedrooms(4);
+		mySingleFamilyHome.setNumBathrooms(3);
+		mySingleFamilyHome.setLaundryRoom(true);
+		mySingleFamilyHome.setGarage(true);
+		
+		System.out.println();
+		System.out.println();
+		System.out.println("-------------------------- TESTING SINGLEFAMILYHOME CLASS"
+							+" --------------------------");
+		// Test the getters for SingleFamilyHome class - confirms setters as well
+		System.out.println("Testing getters/setters for SingleFamilyHome class"
+				   			+"(setters were used for initiation):\n"
+				   			+"getProjectName returns: "
+							+mySingleFamilyHome.getProjectName()+"\n"
+							+"getCompleteAddress returns: "
+							+mySingleFamilyHome.getCompleteAddress()+"\n"
+							+"getTotalSquareFeet returns: "
+							+df.format(mySingleFamilyHome.getTotalSquareFeet())+"\n"
+							+"getOccupancyGroup returns: "
+							+mySingleFamilyHome.getOccupancyGroup()+"\n"
+							+"getSubgroup returns: "
+							+mySingleFamilyHome.getSubgroup()+"\n"
+							+"getNumBedrooms returns: "
+							+mySingleFamilyHome.getNumBedrooms()+"\n"
+							+"getNumBathrooms returns: "
+							+mySingleFamilyHome.getNumBathrooms()+"\n"
+							+"isLaundryRoom returns: "
+							+mySingleFamilyHome.isLaundryRoom()+"\n"
+							+"isGarage returns: "
+							+mySingleFamilyHome.isGarage()+"\n"
+							);
+		
+		// Test draw method for SingleFamilyHome class
+		System.out.println();
+		System.out.println("Testing draw method for SingleFamilyHome class:");
+		mySingleFamilyHome.draw();
+		
+		// Test toString method for SingleFamilyHome class
+		System.out.println();
+		System.out.println("Testing toString method for SingleFamilyHome class:");
+		System.out.println(mySingleFamilyHome.toString());
+		
+		// Test the preferred constructor and the displayData method for
+		// the SingleFamilyHome class
+		SingleFamilyHome mySingleFamilyHome2 = new SingleFamilyHome("mySingleFamilyHome2",
+				"13 Fox Run Rd. | Lynchburg, TN 47325",
+				3000, "Residential", "Group R-1", 4, 3, true, true);
+		System.out.println();
+		System.out.println("Testing preferred constructor and displayData method "
+							+"for SingleFamilyHome class:");
+		System.out.println(mySingleFamilyHome2.displayData());
 		
 	}//end main
 	
